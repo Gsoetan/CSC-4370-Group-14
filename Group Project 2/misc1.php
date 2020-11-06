@@ -11,23 +11,23 @@
 
 <body>
    <?php session_start(); ?>
-   <form action="answer.php" method="POST" class="container">
+   <form action="answersD.php" method="POST" class="container">
 
       <div class="title"> Category: Miscellaneous </div>
        
 
       <div id="question" class="question"> n the 1970s, thos underground urban movement formed in Bronx, New York City </div>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="A" />radio waves <span
+      <label class="option"><input type="radio" name="question-answers" value="A" />radio waves <span
             id="question-answers-A">House</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="B" /> infrared waves<span
+      <label class="option"><input type="radio" name="question-answers" value="B" /> infrared waves<span
             id="question-answers-B">Disco</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="C" />microwaves <span
+      <label class="option"><input type="radio" name="question-answers" value="C" />microwaves <span
             id="question-answers-C">Funk</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="D" />All of the above <span
+      <label class="option"><input type="radio" name="question-answers" value="D" />All of the above <span
             id="question-answers-D">Hip-Hop</span></label>
 
       <input class="button" type="submit" value="Submit">
