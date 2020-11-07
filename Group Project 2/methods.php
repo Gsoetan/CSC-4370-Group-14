@@ -112,8 +112,8 @@
 		}
 
 		function gameOver($points){
-			if ($points == 25) {
-				header("Location: gameOver.html");
+			if ($points >= 25) {
+				header("Location: gameOver.php");
 				exit();
 			}
 		}

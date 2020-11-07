@@ -15,6 +15,7 @@
       <h1><img src="photos/jep_logo.png" alt="jep logo" style="width: 250px"></h1>
 
       <?php
+      include 'methods.php';
       session_start();
 
       $answer = $_POST['question-answers'];
@@ -23,6 +24,12 @@
 
       if ($answer == "B") { $_SESSION["points"] += 1; }
       else { $_SESSION["points"] -= 1; }
+
+      if ($_SESSION["points"] < 0) {
+         $_SESSION["points"] = 0;
+      }
+
+      gameOver($_SESSION["points"]);
 
       echo "<div class='score'> Score: {$_SESSION["points"]}</div>";
 
