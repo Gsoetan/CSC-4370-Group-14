@@ -26,7 +26,7 @@
 					 }
 				}
 			}
-			header("Location: mistake.html");
+			header("Location: mistake.php");
 			exit();
 		}
 
@@ -41,7 +41,7 @@
 					 $uname = $line_array[1];
 					 $upass = $line_array[2];
 					 if ((strcasecmp($uname, $username) == 0) && (strcasecmp($upass, $password)) == 0) {
-					 	header("Location: mistake.html");
+					 	header("Location: mistake.php");
 						exit();
 					 }
 				}
