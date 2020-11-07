@@ -1,3 +1,7 @@
+<?php 
+session_save_path("/home/gsoetan1/public_html/Class_Work/GP2/session");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +13,6 @@
 </head>
 
 <body>
-   <?php session_start(); ?>
 
    <h1><img src="photos/jep_logo.png" alt="jep logo" style="width: 250px"></h1>
    <div class="container">

@@ -1,3 +1,7 @@
+<?php 
+session_save_path("/home/gsoetan1/public_html/Class_Work/GP2/session");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +26,6 @@
 	}
 	$username = signup_check($_POST["username"], $_POST["password"]);
 
-	session_start();
 	?>
 
 	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">

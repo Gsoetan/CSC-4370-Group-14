@@ -1,3 +1,7 @@
+<?php 
+session_save_path("/home/gsoetan1/public_html/Class_Work/GP2/session");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 

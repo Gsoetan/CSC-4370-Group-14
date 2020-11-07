@@ -1,3 +1,7 @@
+<?php 
+session_save_path("/home/gsoetan1/public_html/Class_Work/GP2/session");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,8 +21,6 @@
 		exit();
 	}
 	$credentials = login_check($_POST["username"], $_POST["password"]);
-
-	session_start();
 
 	$_SESSION["name"] = $credentials[0];
 	$_SESSION["username"] = $credentials[1];

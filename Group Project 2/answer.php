@@ -1,3 +1,7 @@
+<?php 
+session_save_path("/home/gsoetan1/public_html/Class_Work/GP2/session");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +20,6 @@
 
       <?php
       include 'methods.php';
-      session_start();
 
       $answer = $_POST['question-answers'];
 

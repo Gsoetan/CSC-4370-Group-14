@@ -10,7 +10,6 @@
 </head>
 
 <body>
-   <?php session_start(); ?>
    <form action="answersD.php" method="POST" class="container">
  <div class="title"> Category: "Technology" </div>
 
