@@ -117,17 +117,6 @@
 				exit();
 			}
 		}
-
-		// $hi = login_check("katie","12345");
-		// print_r($hi);
-		// echo "<br>";
-
-		// $hi2 = signup_check("YikesMate","13245");
-		// echo $hi2."<br>";
-
-		// logout_submit("Katie", "LovelyStyle", "32465", "30");
-		// logout_submit("Jackson", "JackoLantern", "34232", "50");
-		// logout_submit("Jacob", "Team4", "323dqwdq", "60");
 	  ?>
 
 </body>
