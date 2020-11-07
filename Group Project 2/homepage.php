@@ -49,7 +49,13 @@ session_start();
       <div class="box"><a href="musk_q.php">Q5</a></div>
       <div class="box"><a href="keto.php">Q5</a></div>
       <div class="box"><a href="misc5.php">Q5</a></div>
-
+    <h3>
+      <?php
+      echo $_SESSION["name"];
+      echo "<br>";
+      echo "Score: ".$_SESSION["points"];
+      ?>
+    </h3>
       <div><a href="logout.php" class="button" style="margin-right: auto; margin-left: auto; display: grid;">Logout</a><div>
 
    </div>
