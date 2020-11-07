@@ -1,4 +1,7 @@
-
+<?php 
+session_save_path("/home/~username/public_html/groupproject2/sessions");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
