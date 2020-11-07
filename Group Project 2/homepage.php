@@ -20,31 +20,31 @@
       <div class="box">Pop Culture</div>
       <div class="box">Science</div>
       <div class="box">Misc.</div>
-      <div class="box"> <a href="question.php"> $100</a></div>
-      <div class="box"><a href="question6.php">$100 </a></div>
-      <div class="box"><a href="question11.php">$100 </a></div>
-      <div class="box"><a href="cell.php">$100 </a></div>
-      <div class="box"><a href="misc1.php">$100 </a></div>
-      <div class="box"><a href="question2.php"> $200</a></div>
-      <div class="box"><a href="question7.php">$200</a></div>
-      <div class="box"><a href="dicaprio_Q.php">$200</a></div>
-      <div class="box"><a href="waves.php">$200</a></div>
-      <div class="box"><a href="misc2.php">$200</a></div>
-      <div class="box"><a href="question3.php">$300</a></div>
-      <div class="box"><a href="question8.php">$300</a></div>
-      <div class="box"><a href="foreign.php">$300</a></div>
-      <div class="box"><a href="bond.php">$300</a></div>
-      <div class="box"><a href="misc3.php">$300</a></div>
-      <div class="box"><a href="question4.php">$400</a></div>
-      <div class="box"><a href="question9.php">$400</a></div>
-      <div class="box"><a href="marriagestory_q.php">$400</a></div>
-      <div class="box"><a href="medicine.php">$400</a></div>
-      <div class="box"><a href="misc4.php">$400</a></div>
-      <div class="box"><a href="question5.php">$500</a></div>
-      <div class="box"><a href="question10.php">$500</a></div>
-      <div class="box"><a href="musk_q.php">$500</a></div>
-      <div class="box"><a href="keto.php">$500</a></div>
-      <div class="box"><a href="misc5.php">$500</a></div>
+      <div class="box"> <a href="question.php"> Q1</a></div>
+      <div class="box"><a href="question6.php">Q1 </a></div>
+      <div class="box"><a href="question11.php">Q1 </a></div>
+      <div class="box"><a href="cell.php">Q1 </a></div>
+      <div class="box"><a href="misc1.php">Q1 </a></div>
+      <div class="box"><a href="question2.php"> Q2</a></div>
+      <div class="box"><a href="question7.php">Q2</a></div>
+      <div class="box"><a href="dicaprio_Q.php">Q2</a></div>
+      <div class="box"><a href="waves.php">Q2</a></div>
+      <div class="box"><a href="misc2.php">Q2</a></div>
+      <div class="box"><a href="question3.php">Q3</a></div>
+      <div class="box"><a href="question8.php">Q3</a></div>
+      <div class="box"><a href="foreign.php">Q3</a></div>
+      <div class="box"><a href="bond.php">Q3</a></div>
+      <div class="box"><a href="misc3.php">Q3</a></div>
+      <div class="box"><a href="question4.php">Q4</a></div>
+      <div class="box"><a href="question9.php">Q4</a></div>
+      <div class="box"><a href="marriagestory_q.php">Q4</a></div>
+      <div class="box"><a href="medicine.php">Q4</a></div>
+      <div class="box"><a href="misc4.php">Q4</a></div>
+      <div class="box"><a href="question5.php">Q5</a></div>
+      <div class="box"><a href="question10.php">Q5</a></div>
+      <div class="box"><a href="musk_q.php">Q5</a></div>
+      <div class="box"><a href="keto.php">Q5</a></div>
+      <div class="box"><a href="misc5.php">Q5</a></div>
 
       
       <a href="logout.php">
