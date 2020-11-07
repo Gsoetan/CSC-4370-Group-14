@@ -13,11 +13,11 @@ session_start();
 	include "methods.php";
 
 	if ("" == trim($_POST['username'])) {
-		header("Location: mistake.html");
+		header("Location: mistake.php");
 		exit();
 	}
 	if ("" == trim($_POST['password'])) {
-		header("Location: mistake.html");
+		header("Location: mistake.php");
 		exit();
 	}
 	$credentials = login_check($_POST["username"], $_POST["password"]);
