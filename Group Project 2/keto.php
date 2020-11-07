@@ -1,4 +1,7 @@
-
+<?php 
+session_save_path("/home/~username/public_html/groupproject2/sessions");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,16 +20,16 @@
 
       <div id="question" class="question">The ketogenic diet aims to switch the body's energy source from ____ to ____ </div>
 
-      <label class="option"><input type="radio" name="question-answers" value="A" />radio waves <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /><span
             id="question-answers-A"></span>Fat, Glucose</label>
 
-      <label class="option"><input type="radio" name="question-answers" value="B" /> infrared waves<span
+      <label class="option"><input type="radio" name="question-answers" value="B" /><span
             id="question-answers-B"></span>Glucose, Fat</label>
 
-      <label class="option"><input type="radio" name="question-answers" value="C" />microwaves <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-answers-C"></span>Fatty Acids, Cholesterol</label>
 
-      <label class="option"><input type="radio" name="question-answers" value="D" />All of the above <span
+      <label class="option"><input type="radio" name="question-answers" value="D" /><span
             id="question-answers-D"></span> Calories, ATP</label>
 
       <input class="button" type="submit" value="Submit">
