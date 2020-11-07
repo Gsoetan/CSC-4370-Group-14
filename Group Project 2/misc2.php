@@ -19,16 +19,16 @@
       
       <img src = "photos/bballcourt.png" alt="bball court pic"  class="image">
 
-      <label class="option"><input type="radio" name="question-9-answers" value="A" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">bowling alley</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="B" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="B" /> <span
             id="question-answers-B">basketball court</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="C" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-answers-C">volleyball court</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="D" /><span
+      <label class="option"><input type="radio" name="question-answers" value="D" /><span
             id="question-answers-D">indoor soccer field</span></label>
 
       <input class="button" type="submit" value="Submit">

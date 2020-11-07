@@ -17,16 +17,16 @@
 
       <div id="question" class="question"> Along with his wife, Elon Musk contributed to  part of his son's unique name. What was that part? </div>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="A" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">A-12</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="B" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="B" /> <span
             id="question-answers-B">AE</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="C" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-answers-C">AE-12</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="D" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="D" /> <span
             id="question-answers-D">X</span></label>
 
       <input class="button" type="submit" value="Submit">
