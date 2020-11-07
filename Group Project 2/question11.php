@@ -1,4 +1,7 @@
-
+<?php 
+session_save_path("/home/~username/public_html/session");
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
