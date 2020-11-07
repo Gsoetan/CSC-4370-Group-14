@@ -15,7 +15,7 @@
       <div class="title"> Category: Miscellaneous </div>
        
 
-      <div id="question" class="question"> n the 1970s, this underground urban movement formed in Bronx, New York City </div>
+      <div id="question" class="question"> In the 1970s, this underground urban movement formed in Bronx, New York City. </div>
 
       <label class="option"><input type="radio" name="question-answers" value="A" /><span
             id="question-answers-A">House</span></label>
