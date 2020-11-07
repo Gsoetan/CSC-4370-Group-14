@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   <?php session_start(); ?>
    <form action="answersB.php" method="POST" class="container">
 
       <div class="title"> Category: History </div>

@@ -32,10 +32,6 @@
 
    </form>
 
-   <?php 
-   echo $_SESSION["username"];
-   echo $_SESSION["points"];
-    ?>
 </body>
 
 </html>
