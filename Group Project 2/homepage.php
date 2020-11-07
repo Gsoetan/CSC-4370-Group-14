@@ -50,7 +50,7 @@ session_start();
       <div class="box"><a href="keto.php">Q5</a></div>
       <div class="box"><a href="misc5.php">Q5</a></div>
 
-      <div><a href="logout.php" class="button">Logout</a><div>
+      <div><a href="logout.php" class="button" style="margin-right: auto; margin-left: auto; display: grid;">Logout</a><div>
 
    </div>
       
