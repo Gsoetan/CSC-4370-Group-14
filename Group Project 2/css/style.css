@@ -179,9 +179,9 @@ input[type="submit"] {
 
 .logout{
 
-  position: relative;
-  margin-top: 40px;
-  margin-left: 315px;
+  position: absolute;
+  margin-left: 35em;
+  margin-top: 28em;
   font-family: Arial, sans-serif;
   padding: 10px 30px 10px;
   font-size:20px;
@@ -243,3 +243,39 @@ input[type="submit"] {
     transform: translateY(2px);
 }
 
+
+.hscores{
+
+   max-width: 100%;
+   font-size: 20px;
+   line-height: 50px;
+   font-weight: bolder;
+
+}
+
+.button2{
+
+   align-items: center;
+   font-family: Arial, sans-serif;
+   font-size: 25px;
+   display: inline-block;
+   padding: 10px 30px 10px;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   background: rgb(203, 231, 40);
+   border-radius: 15px;
+   box-shadow: 0 5px #999;
+
+}
+
+.button2:hover {
+  background: #2a4881;
+  color: white;
+}
+
+.button2:active {
+    background: #5a77ad;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}

@@ -46,6 +46,7 @@
       <div class="box"><a href="keto.php">Q5</a></div>
       <div class="box"><a href="misc5.php">Q5</a></div>
 
+   </div>
       
       <a href="logout.php">
          <input type="button" value="Logout" class="logout">
