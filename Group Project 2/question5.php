@@ -10,7 +10,7 @@
 </head>
 
 <body>
-   <form action="answersD.php" method="POST" class="container">
+   <form action="answersB.php" method="POST" class="container">
     <div class="title"> Category: "Technology" </div>
 
       <div id="question" class="question"> The founder of SpaceX is
