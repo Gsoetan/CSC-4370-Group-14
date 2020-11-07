@@ -20,16 +20,16 @@ session_start();
 
       <div id="question" class="question">The youngest U.S. cabinet department is the Department of  </div>
 
-      <label class="option"><input type="radio" name="question-answers" value="A" />radio waves <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /><span
             id="question-answers-A">Homeland Security</span></label>
 
-      <label class="option"><input type="radio" name="question-answers" value="B" /> infrared waves<span
+      <label class="option"><input type="radio" name="question-answers" value="B" /><span
             id="question-answers-B">Health and Human Services</span></label>
 
-      <label class="option"><input type="radio" name="question-answers" value="C" />microwaves <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-answers-C">Education</span></label>
 
-      <label class="option"><input type="radio" name="question-answers" value="D" />All of the above <span
+      <label class="option"><input type="radio" name="question-answers" value="D" /><span
             id="question-answers-D">Energy</span></label>
 
       <input class="button" type="submit" value="Submit">
