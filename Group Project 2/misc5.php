@@ -17,16 +17,16 @@
 
       <div id="question" class="question">ROYGBIV is an acronym for   </div>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="A" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">colors of the rainbow</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="B" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="B" /> <span
             id="question-answers-B">UV light frequencies</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="C" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="C" /> <span
             id="question-answers-C">infrared waves</span></label>
 
-      <label class="option"><input type="radio" name="question-9-answers" value="D" /> <span
+      <label class="option"><input type="radio" name="question-answers" value="D" /> <span
             id="question-answers-D">electromagnetic spectrum</span></label>
 
       <input class="button" type="submit" value="Submit">
