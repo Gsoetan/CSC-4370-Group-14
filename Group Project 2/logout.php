@@ -9,8 +9,8 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
-	<p>Bye, <?php echo $_SESSION["username"]; ?>!</p>
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea" class="center-banner">
+	<h1>Bye, <?php echo $_SESSION["username"]; ?>!</h1>
 	<?php 
 		include "methods.php";
 
@@ -20,6 +20,6 @@ session_start();
 		session_destroy(); // end the session
 	?>
 
-	<p><a class="button" href="jep_homepage.php">Go to Homepage</a></p>
+	<p class="dialogue"><a class="button" href="jep_homepage.php">Go to Homepage</a></p>
 </body>
 </html>

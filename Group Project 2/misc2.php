@@ -15,8 +15,8 @@
        
 
       <div id="question" class="question">This image below taken at Springfield College was the first</div>
-      
-      <img src = "photos/bballcourt.png" alt="bball court pic"  class="image">
+
+       <img src = "photos/bballcourt.png" alt="bball court pic"  class="image">
 
       <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">bowling alley</span></label>

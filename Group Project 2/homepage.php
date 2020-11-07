@@ -15,6 +15,7 @@ session_start();
 <body>
 
    <h1><img src="photos/jep_logo.png" alt="jep logo" style="width: 250px"></h1>
+   <h1><?php  echo $_SESSION["username"]."'s Current points: ".$_SESSION["points"]; ?></h1>
    <div class="container">
 
 
@@ -23,7 +24,7 @@ session_start();
       <div class="box">Pop Culture</div>
       <div class="box">Science</div>
       <div class="box">Misc.</div>
-      <div class="box"> <a href="question.php"> Q1</a></div>
+      <div class="box"><a href="question.php"> Q1</a></div>
       <div class="box"><a href="question6.php">Q1 </a></div>
       <div class="box"><a href="question11.php">Q1 </a></div>
       <div class="box"><a href="cell.php">Q1 </a></div>
@@ -49,16 +50,10 @@ session_start();
       <div class="box"><a href="keto.php">Q5</a></div>
       <div class="box"><a href="misc5.php">Q5</a></div>
 
+      <div><a href="logout.php" class="button">Logout</a><div>
+
    </div>
       
-      <a href="logout.php">
-         <input type="button" value="Logout" class="logout">
-      </a>
-
-      <?php
-      echo $_SESSION["username"];
-      echo $_SESSION["points"];
-      ?>
 
 
 </body>

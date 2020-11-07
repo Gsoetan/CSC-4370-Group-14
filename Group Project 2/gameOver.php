@@ -9,12 +9,10 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
-	<p>You've Won, <?php echo $_SESSION["username"]; ?>!</p>
-	<?php 
-		echo "Total Score: ".$_SESSION["points"]."<br>";
-	?>
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea" class="center-banner">
+	<h1>You've Won, <?php echo $_SESSION["username"]; ?>!</h1>
+	<h2 class="dialogue">Total Score: <?php echo $_SESSION["points"]."<br>"; ?></h2>
 
-	<p><a class="button" href="logout.php">Logout</a></p>
+	<p class="dialogue"><a class="button" href="logout.php">Logout</a></p>
 </body>
 </html>

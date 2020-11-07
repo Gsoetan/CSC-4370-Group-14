@@ -28,10 +28,10 @@ session_start();
 
 	?>
 
-	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
-	<p>Hi, <?php echo $_POST["username"]; ?>. Welcome!</p>
-	<p>Let's get started!</p>
-	<p><a class="button" href="homepage.php">Let's play!</a></p>
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea" class="center-banner">
+	<h1>Hi, <?php echo $_POST["username"]; ?>. Welcome!</h1>
+	<h2 class="dialogue">Let's get started!</h2>
+	<p class="dialogue"><a class="button" href="homepage.php">Let's play!</a></p>
 
 	<?php
 		$_SESSION["name"] = $_POST["name"];

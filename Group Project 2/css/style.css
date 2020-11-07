@@ -8,7 +8,7 @@ body{
 
 .container{
 
-   height:480px;
+   height:auto;
    width:750px;
    top:50%;
    left:50%;
@@ -278,4 +278,18 @@ input[type="submit"] {
     background: #5a77ad;
     box-shadow: 0 3px #666;
     transform: translateY(2px);
+}
+
+.image {
+  width: 400px;
+}
+
+.dialogue {
+  text-align: center;
+}
+
+.center-banner {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }

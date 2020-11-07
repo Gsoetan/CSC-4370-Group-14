@@ -15,7 +15,8 @@
       <div class="title"> Category: Pop Culture </div>
 
       <div id="question" class="question"> The Dicaprio image below is used for memes based on what movie? </div>
-       <img src="photos/Dicaprio.png" alt="Dicaprio meme" class="image">
+
+      <img src="photos/Dicaprio.png" alt="Dicaprio meme" class="image">
 
       <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">The Revenant</span></label>

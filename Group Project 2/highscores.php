@@ -6,14 +6,14 @@
 </head>
 <body>
 	<h1>Global Highscores</h1>
-	<div id="scores">
-		<ol>
+	<div id="scores" class="container">
+		<ol class="hscores">
 			<?php 
 				include 'methods.php';
 				getLeaderboard();
 			 ?>
 		</ol>
+		<p class="dialogue"><a href="jep_homepage.php" class="button" >Go Back</a></p>
 	</div>
-	<p><a href="jep_homepage.php" class="button">Go Back</a></p>
 </body>
 </html>

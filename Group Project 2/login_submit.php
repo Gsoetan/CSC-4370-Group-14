@@ -29,11 +29,11 @@ session_start();
 
 	?>
 
-	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea">
-	<p>Hi <?php echo $_SESSION["name"]."<br>" ?></p>
-	<p>Your score last time was <?php echo $credentials[3]."<br>"; ?></p>
-	<p>Want to try again?</p>
-	<p><a class="button" href="homepage.php">Let's play!</a></p>
+	<img src="photos/jep_logo.png" alt="jep logo" id="bannerarea" class="center-banner">
+	<h1>Hi <?php echo $_SESSION["name"]."<br>" ?></h1>
+	<h2 class="dialogue">Your score last time was <?php echo $credentials[3]."<br>"; ?></h2>
+	<h2 class="dialogue">Want to try again?</h2>
+	<p class="dialogue"><a class="button" href="homepage.php">Let's play!</a></p>
 
 	<?php
 		
