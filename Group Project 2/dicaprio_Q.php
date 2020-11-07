@@ -6,7 +6,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
-   <title>Pop Culture Question</title>
+   <title>Question</title>
 </head>
 
 <body>
@@ -14,9 +14,8 @@
 
       <div class="title"> Category: Pop Culture </div>
 
-      <div id="question" class="question"> The Dicaprio image below is used for memes based on what movie? </div>
+      <div id="question" class="question"> The Dicaprio meme that shows him holding a wine glasses while hilariously laughing originates from what movie?  </div>
 
-      <img src="photos/Dicaprio.png" alt="Dicaprio meme" class="image">
 
       <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">The Revenant</span></label>
