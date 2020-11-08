@@ -16,7 +16,6 @@
 
       <div id="question" class="question">Springfield College, which later became known as International YMCA Training School, had a gymnasium that was known as the first</div>
 
-]
       <label class="option"><input type="radio" name="question-answers" value="A" /> <span
             id="question-answers-A">bowling alley</span></label>
 
