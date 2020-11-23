@@ -1,0 +1,44 @@
+h1{
+	text-align: center;
+}
+
+input[type="button"]{
+	text-align: center;
+}
+
+#puzzle,
+#game {
+	width: 400px;
+}
+
+.buttons{
+	text-align: center;
+	margin-top: 1em;
+}
+
+#game{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#puzzle{
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+.puzzleTile {
+	background-image: url('../images/mario.jpg');
+	border: 2px solid black;
+	height: 96px;
+	width: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#validator {
+	text-align: right;
+}

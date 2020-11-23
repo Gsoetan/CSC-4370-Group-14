@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fifteen Puzzle</title>
+	<script src="fifteen.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fifteen.css">
+</head>
+<body>
+	<script type="text/javascript"> window.onload = function () { start_game(); }</script>
+	<h1>Fifteeen Puzzle</h1>
+
+	<p>
+		The goal of the fifteen puzzle is to un-scramble the fifteen squares
+	 	by repeatedly making moves that slide squares into the empty space. How
+	 	quickly can you solve it?
+	</p>
+
+	<div id="game"></div>
+	<div id="interface" class="buttons">
+		<input type="button" id="shuffle" value="Shuffle" onclick="shuffle_tiles()">
+		<input type="button" id="IDK yet" value="IDK yet">
+		<p id="test"></p>
+	</div>
+
+	<p>
+		American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,
+		Loyd claimed from 1891 until his death death in 1911 that he invented it. The puzzle was actually created around 
+		1874 by Nayes Palmer Champman, a postmaster in Canastota, New York.
+	</p>
+
+	<div id="validator">
+		<a href="https://validator.w3.org/"><img src="images/w3c-xhtml.png"></a>
+		<a href="https://jigsaw.w3.org/css-validator/"><img src="images/w3c-css.png"></a>
+		<!--  <a href="https://validator.w3.org/"><img src="W3JS"></a>  !-->
+	</div>
+
+</body>
+</html>
