@@ -1,8 +1,8 @@
-h1{
-	text-align: center;
-}
-
-input[type="button"]{
+h1, 
+#timer,
+#overview,
+input[type="button"], 
+.buttons{
 	text-align: center;
 }
 
@@ -12,7 +12,6 @@ input[type="button"]{
 }
 
 .buttons{
-	text-align: center;
 	margin-top: 1em;
 }
 
@@ -28,8 +27,18 @@ input[type="button"]{
 	position: relative;
 }
 
+.movedUp{}
+.movedDown{}
+.movedLeft{}
+.movedRight{}
+
+@keyframes move {
+	
+}
+
+.blockedTile,
+.freeTile,
 .puzzleTile {
-	background-image: url('../images/mario.jpg');
 	border: 2px solid black;
 	height: 96px;
 	width: 96px;
@@ -37,6 +46,21 @@ input[type="button"]{
 	position: absolute;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.blockedTile,
+.freeTile {
+	text-decoration: underline;
+}
+
+.blockedTile {
+	border: 2px solid red;
+	color: #ff0008;
+}
+
+.freeTile {
+	border: 2px solid green;
+	color: #229103;
 }
 
 #validator {

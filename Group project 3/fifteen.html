@@ -7,7 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/fifteen.css">
 </head>
 <body>
-	<script type="text/javascript"> window.onload = function () { start_game(); }</script>
+	<script type="text/javascript"> 
+		window.onload = function () { start_game(); }
+		const music = new sound("sounds/timing.mp3");
+	</script>
 	<h1>Fifteeen Puzzle</h1>
 
 	<p>
@@ -16,11 +19,16 @@
 	 	quickly can you solve it?
 	</p>
 
+	<div id="timer"></div>
+	<div id="overview">
+		<p id="total_moves"></p>
+		<p id="total_time"></p>
+	</div>
 	<div id="game"></div>
 	<div id="interface" class="buttons">
 		<input type="button" id="shuffle" value="Shuffle" onclick="shuffle_tiles()">
 		<input type="button" id="IDK yet" value="IDK yet">
-		<p id="test"></p>
+		<p id="test"></p> <!-- this can be removed when done !-->
 	</div>
 
 	<p>
