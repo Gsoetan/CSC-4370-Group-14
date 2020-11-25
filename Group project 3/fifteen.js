@@ -254,8 +254,15 @@ function printResults(out_of_time) {
 	
 }
 function youwon () {
-    for (var i=0; i<tiles; i++){
-        if (total_moves_taken>0 && parseInt(gamePiecesArray[i])!=i+1){
+    var win=false;
+        for (var i=0; i<tiles; i++){
+            if (document.getElementById('tile' + (i+1)).innerHTML = i+1){
+                win=true;
+        }else {
+		win=false;
+		break;
+        }
+        if (win==true){
             clearInterval(timeinterval);
 			music.stop();
             document.getElementById('win').innerHTML = '<h1> You Won! <h1>';
@@ -263,7 +270,6 @@ function youwon () {
             img.src = 'https://media1.tenor.com/images/0f78888f4bcaaf2671fcdc0fa9bf91d9/tenor.gif'; 
             document.getElementById('win').appendChild(img); 
             
-        }
-            
     }
 }
+
