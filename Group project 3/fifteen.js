@@ -242,6 +242,7 @@ function formatTime(number) {
 }
 
 function printResults(out_of_time) {
+	youwon ();
 	if (out_of_time) {
 		let time_at_finish = countDown(deadline);
 		let seconds = Math.floor((time_at_finish.total/1000) % 60);
@@ -255,7 +256,9 @@ function printResults(out_of_time) {
 function youwon () {
     for (var i=0; i<tiles; i++){
         if (total_moves_taken>0 && parseInt(gamePiecesArray[i])!=i+1){
-            document.getElementById('win').innerHTML = 'You Won!';
+            clearInterval(timeinterval);
+			music.stop();
+            document.getElementById('win').innerHTML = '<h1> You Won! <h1>';
             var img = document.createElement('img'); 
             img.src = 'https://media1.tenor.com/images/0f78888f4bcaaf2671fcdc0fa9bf91d9/tenor.gif'; 
             document.getElementById('win').appendChild(img); 
