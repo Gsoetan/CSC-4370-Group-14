@@ -252,3 +252,15 @@ function printResults(out_of_time) {
 	document.getElementById('total_moves').innerHTML = total_moves_taken;
 	
 }
+function youwon () {
+    for (var i=0; i<tiles; i++){
+        if (total_moves_taken>0 && parseInt(gamePiecesArray[i])!=i+1){
+            document.getElementById('win').innerHTML = 'You Won!';
+            var img = document.createElement('img'); 
+            img.src = 'https://media1.tenor.com/images/0f78888f4bcaaf2671fcdc0fa9bf91d9/tenor.gif'; 
+            document.getElementById('win').appendChild(img); 
+            
+        }
+            
+    }
+}
