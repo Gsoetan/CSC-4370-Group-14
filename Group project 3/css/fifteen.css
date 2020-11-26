@@ -1,6 +1,7 @@
 h1, 
 #timer,
 #overview,
+#win_text,
 input[type="button"], 
 .buttons{
 	text-align: center;

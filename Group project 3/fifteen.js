@@ -63,8 +63,9 @@ function onClickHandler() {
 	let isBlocked = mobility(parseInt(this.innerHTML));
 	if (isBlocked) { 
 		total_moves_taken++;
-		printResults(false);
-		switch_positions(this.innerHTML-1); 
+		//printResults(false);
+		switch_positions(this.innerHTML-1);
+		if(youwon()) { endGame(); } 
 	}
 }
 
@@ -229,7 +230,7 @@ function start_timing(elemId,endtime){
 			// start_timing("timer",deadline);
 		}
 		if(time.total<300000){ // 5 mins
-			//music.play();
+			music.play();
 		} 
 	}
 	update_clock(); // run once remove lag
@@ -242,42 +243,49 @@ function formatTime(number) {
 }
 
 function printResults(out_of_time) {
-	youwon ();
-	if (out_of_time) {
-		let time_at_finish = countDown(deadline);
-		let seconds = Math.floor((time_at_finish.total/1000) % 60);
-		let minutes = Math.floor((time_at_finish.total/1000/60) % 60);
+	if (!out_of_time) {
+		let time_at_finish_array = countDown(deadline);
+		let time_at_finish = (timer_amount * (60*1000)) - time_at_finish_array.total;
+		let seconds = Math.floor((time_at_finish/1000) % 60);
+		let minutes = Math.floor((time_at_finish/1000/60) % 60);
 		let total_time_taken = minutes + 'm ' + seconds + 's';
-		document.getElementById('total_time').innerHTML = total_time_taken;
+		document.getElementById('total_time').innerHTML = "It took you: " + total_time_taken;
 	}
-	document.getElementById('total_moves').innerHTML = total_moves_taken;
+	document.getElementById('total_moves').innerHTML = "Total moves taken: " + total_moves_taken;
 	
 }
-function youwon () {
-    var win=false;
-    var arr = new Array ();
-    var sorted = new Array ();
+
+function endGame(){
+	clearInterval(timeinterval); // stop the timer
+	clearElement('game'); // clear the game element
+	clearElement('interface'); // clear buttons
+	clearElement('timer'); // clear timer
+	printResults(false); // print out the results for the game
+
+	//setting up the winner div tag 
+	let win_interface_id = document.getElementById('win');
+	music.stop();
+	var win_ui = document.createElement('P');
+	win_ui.setAttribute('id', 'win_text');
+	win_interface_id.appendChild(win_ui);
+    document.getElementById('win_text').innerHTML = 'You Won!';
+
+    var img = document.createElement('IMG'); 
+    img.setAttribute("src", "images/mario_winner.png");
+    win_interface_id.appendChild(img);
+}
+
+function youwon() {
+    var win=true;
     for (var i=0; i<tiles; i++){
-        arr.push(parseInt(document.getElementById('tile'+ (i+1)).innerText));
-        sorted.push(parseInt(document.getElementById('tile'+ (i+1)).innerText));
+    	var top_coord = parseInt(gamePiecesArray[i].style.top);
+    	var left_coord = parseInt(gamePiecesArray[i].style.left);
+    	if (left_coord != (i%4*100) || top_coord != parseInt(i/4)*100) {
+    		win = false;
+    		break;
+    	}
     }
-    sorted.sort();
-    for (var i=0; i<tiles; i++){  
-        if (arr[i]==sorted[i]) {
-            win=true;
-        }else{
-            win=false;
-            break;
-        }
-    }
-        if (win==true){
-            clearInterval(timeinterval);
-			music.stop();
-            document.getElementById('win').innerHTML = '<h1> You Won! <h1>';
-            var img = document.createElement('img'); 
-            img.src = 'https://media1.tenor.com/images/0f78888f4bcaaf2671fcdc0fa9bf91d9/tenor.gif'; 
-            document.getElementById('win').appendChild(img); 
-        }
-    }
+    return win;
+}
 
 
