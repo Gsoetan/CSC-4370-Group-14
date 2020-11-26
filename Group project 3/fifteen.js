@@ -255,13 +255,21 @@ function printResults(out_of_time) {
 }
 function youwon () {
     var win=false;
-        for (var i=0; i<tiles; i++){
-            if (document.getElementById('tile' + (i+1)).innerHTML = i+1){
-                win=true;
-        }else {
-		win=false;
-		break;
+    var arr = new Array ();
+    var sorted = new Array ();
+    for (var i=0; i<tiles; i++){
+        arr.push(parseInt(document.getElementById('tile'+ (i+1)).innerText));
+        sorted.push(parseInt(document.getElementById('tile'+ (i+1)).innerText));
+    }
+    sorted.sort();
+    for (var i=0; i<tiles; i++){  
+        if (arr[i]==sorted[i]) {
+            win=true;
+        }else{
+            win=false;
+            break;
         }
+    }
         if (win==true){
             clearInterval(timeinterval);
 			music.stop();
@@ -269,7 +277,7 @@ function youwon () {
             var img = document.createElement('img'); 
             img.src = 'https://media1.tenor.com/images/0f78888f4bcaaf2671fcdc0fa9bf91d9/tenor.gif'; 
             document.getElementById('win').appendChild(img); 
-            
+        }
     }
-}
+
 
