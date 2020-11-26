@@ -94,6 +94,23 @@ function something(pos) { document.getElementById('test').innerHTML = pos; }
 
 function shuffle_tiles(){
 
+	var container = document.getElementById("puzzle");
+	var elementsArray = Array.prototype.slice.call(container.getElementsByClassName('puzzleTile'));
+	elementsArray.forEach(function (element) {
+		container.removeChild(element);
+	})
+	shuffleArray(elementsArray);
+	elementsArray.forEach(function (element) {
+		container.appendChild(element);
+	})
+}
+
+function shuffleArray(array) {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+	
 }
 
 function switch_positions(tile_pos) {
