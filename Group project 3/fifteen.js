@@ -123,18 +123,18 @@ function switch_positions(tile_pos, be_fancy) {
 	var intv;
 
 	if ((x_diff) < 0 && (x_diff) != 0) { // if tile is moving to the right
-		document.getElementById('test').innerHTML = "I moved right";
+		// document.getElementById('test').innerHTML = "I moved right";
 		if (be_fancy) { intv = setInterval(framesRight, switch_time); }
 	} else if ((x_diff) > 0 && (x_diff) != 0) { // if the tile is moving to the left
-		document.getElementById('test').innerHTML = "I moved left";
+		// document.getElementById('test').innerHTML = "I moved left";
 		if (be_fancy) { intv = setInterval(framesLeft, switch_time); }
 	}
 
 	if ((y_diff) < 0 && (y_diff) != 0) { // if the tile is moving down
-		document.getElementById('test').innerHTML = "I moved down";
+		// document.getElementById('test').innerHTML = "I moved down";
 		if (be_fancy) { intv = setInterval(framesDown, switch_time); }
 	} else if ((y_diff) > 0 && (y_diff) != 0) { // if the tile is moving up
-		document.getElementById('test').innerHTML = "I moved up";
+		// document.getElementById('test').innerHTML = "I moved up";
 		if (be_fancy) { intv = setInterval(framesUp, switch_time); }
 	}
 
