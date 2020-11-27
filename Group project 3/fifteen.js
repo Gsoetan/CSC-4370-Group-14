@@ -241,7 +241,7 @@ function start_timing(elemId,endtime){
 			printResults(true);
 		}
 		if(time.total<300000){ // 5 mins
-			//music.play();
+			music.play();
 		} 
 	}
 	update_clock(); // run once remove lag
