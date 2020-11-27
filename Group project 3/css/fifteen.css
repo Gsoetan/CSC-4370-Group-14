@@ -28,15 +28,6 @@ input[type="button"],
 	position: relative;
 }
 
-.movedUp{}
-.movedDown{}
-.movedLeft{}
-.movedRight{}
-
-@keyframes move {
-	
-}
-
 .blockedTile,
 .freeTile,
 .puzzleTile {

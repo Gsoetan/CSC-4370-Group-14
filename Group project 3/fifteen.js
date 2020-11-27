@@ -1,9 +1,9 @@
 // Group project 3 javascript
+'use strict';
 
 var game = null; // game board
 var puzzle;
 
-var boardArray;
 var empty_x_coordinate = '300px'; // 300 pixels right
 var empty_y_coordinate = '300px'; // 300 pixels down
 const rows = 4;
@@ -19,7 +19,9 @@ const switch_time = 5;
 var gamePiecesArray = [];
 
 var total_moves_taken = 0;
-var total_time_taken = ''; // gonna be something like time/1000 = seconds then idk after that
+var total_time_taken = '';
+
+var current_lead = '';
 
 function clearElement(elemId) { document.getElementById(elemId).innerHTML = ''; }
 
@@ -61,22 +63,21 @@ function format_square(index) {
 }
 
 function onClickHandler() {
-	let isBlocked = mobility(parseInt(this.innerHTML));
-	if (isBlocked) { 
+	let isNotBlocked = mobility(parseInt(this.innerHTML));
+	if (isNotBlocked) { 
 		total_moves_taken++;
-		//printResults(false);
+		//printResults(false); // for debugging
 		switch_positions(this.innerHTML-1, true);
 		if(youwon()) { endGame(); } 
 	}
 }
 
 function onHoverHander() {
-	//something(parseInt(this.innerHTML)); // testing to get each number
-	let isBlocked = mobility(parseInt(this.innerHTML));
-	if (!isBlocked) { 
-		this.className = "blockedTile";
-	} else {
+	let isNotBlocked = mobility(parseInt(this.innerHTML));
+	if (isNotBlocked) {
 		this.className = "freeTile";
+	} else {
+		this.className = "blockedTile";
 	}
 }
 
@@ -191,7 +192,6 @@ function move(pos) {
 		result = coord_check(space_x_coord, space_y_coord, pos);
 		return result;
 	}
-
 	return -1;
 }
 
@@ -239,12 +239,9 @@ function start_timing(elemId,endtime){
 			music.stop();
 			document.getElementById('timer').innerHTML = "Time's up!";
 			printResults(true);
-			// current_time = Date.parse(new Date());
-			// deadline = new Date(current_time + timer_for*60*1000);
-			// start_timing("timer",deadline);
 		}
 		if(time.total<300000){ // 5 mins
-			music.play();
+			//music.play();
 		} 
 	}
 	update_clock(); // run once remove lag
@@ -256,17 +253,28 @@ function formatTime(number) {
 	return number;
 }
 
+function getFormattedTime(time) {
+	let seconds = Math.floor((time/1000) % 60);
+	let minutes = Math.floor((time/1000/60) % 60);
+	let total_time = minutes + 'm ' + seconds + 's';
+	return total_time;
+}
+
 function printResults(out_of_time) {
+	let time_at_finish = 0;
 	if (!out_of_time) {
 		let time_at_finish_array = countDown(deadline);
-		let time_at_finish = (timer_amount * (60*1000)) - time_at_finish_array.total;
-		let seconds = Math.floor((time_at_finish/1000) % 60);
-		let minutes = Math.floor((time_at_finish/1000/60) % 60);
-		let total_time_taken = minutes + 'm ' + seconds + 's';
-		document.getElementById('total_time').innerHTML = "It took you: " + total_time_taken;
+		time_at_finish = (timer_amount * (60*1000)) - time_at_finish_array.total;
+		let total_time_taken = getFormattedTime(time_at_finish);
+		document.getElementById('total_time').innerHTML = "Time taken: " + total_time_taken;
 	}
+	check_leader(total_moves_taken, time_at_finish);
+	let leader_arr = current_lead.split(';');
+
+	let best_time_taken = getFormattedTime(leader_arr[1]);
+
+	document.getElementById('best').innerHTML = "Best so far: " + leader_arr[0] + " moves in " + best_time_taken;
 	document.getElementById('total_moves').innerHTML = "Total moves taken: " + total_moves_taken;
-	
 }
 
 function endGame(){
@@ -279,6 +287,7 @@ function endGame(){
 	//setting up the winner div tag 
 	let win_interface_id = document.getElementById('win');
 	music.stop();
+
 	var win_ui = document.createElement('P');
 	win_ui.setAttribute('id', 'win_text');
 	win_interface_id.appendChild(win_ui);
@@ -302,4 +311,21 @@ function youwon() {
     return win;
 }
 
+function check_leader(moves, time) {
+	current_lead = localStorage.leader;
+	let new_leader = moves + ';' + time;
+	let old_leader_values = null;
 
+	if (current_lead == undefined) {
+		localStorage.leader = new_leader;
+		current_lead = new_leader;
+	} else { 
+		old_leader_values = current_lead.split(';');
+
+		//comparing based off of time taken to complete puzzle
+		if (old_leader_values[1] > time) { 
+			localStorage.leader = new_leader;
+			current_lead = new_leader; 
+		}
+	}
+}
