@@ -324,8 +324,8 @@ function endGame(){
 }
 
 /*Function for checking the postion of each tile and verifying that it matches
-to what the puzzle would look like solved. All by checking the tile's left and top
-position in the div*/
+to what the puzzle would look like solved. All by verifying the tile's x and y
+coordinates in the div*/
 function youwon() {
     var win=true;
     for (var i=0; i<TILES; i++){
