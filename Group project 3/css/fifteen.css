@@ -6,7 +6,7 @@ input[type="button"],
 .buttons{
 	text-align: center;
 }
-
+/*Makes 400x400 space for puzzle*/
 #puzzle,
 #game {
 	width: 400px;
@@ -28,6 +28,7 @@ input[type="button"],
 	position: relative;
 }
 
+/*Creates requirements so that each tile is only 100x100*/
 .blockedTile,
 .freeTile,
 .puzzleTile {
@@ -40,6 +41,7 @@ input[type="button"],
 	vertical-align: middle;
 }
 
+/*Underlines the number in tile (For better user experience)*/
 .blockedTile,
 .freeTile {
 	text-decoration: underline;
