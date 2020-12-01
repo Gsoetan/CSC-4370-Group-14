@@ -1,4 +1,4 @@
-// Group project 3 javascript
+// Group project 3 javascript to make fifteen puzzle
 'use strict';
 
 var game = null; // game board
