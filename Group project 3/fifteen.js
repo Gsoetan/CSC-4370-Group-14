@@ -108,7 +108,7 @@ function something(pos) { document.getElementById('test').innerHTML = pos; } // 
 /*Method that is used when the user clicks on the shuffle button on the page
 shuffles the tiles buy randomly choosing from movable pieces and swapping them*/
 function shuffle_tiles(){
-	for (var i = 0; i < 300; i++){ // i here is what dictates how many randomized moves were used to make the shuffle
+	for (var i = 0; i < 1000; i++){ // i here is what dictates how many randomized moves were used to make the shuffle
 		let moveable_pieces = [];
 		for (var j = 0; j < TILES; j++){
 			let tile = gamePiecesArray[j];
